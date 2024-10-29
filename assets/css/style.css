@@ -1,0 +1,33 @@
+body {
+    background-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+section {
+    padding: 20px;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.text__main {
+    font-size: 25px;
+}
+
+.text__secondary {
+    color: #9f9f9f;
+}
