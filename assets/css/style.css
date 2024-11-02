@@ -6,8 +6,6 @@ body {
 section {
     padding: 20px;
     font-size: 20px;
-    width: 300px;
-    height: 300px;
     border-radius: 5px;
     margin: 0 auto;
     position: absolute;
@@ -30,4 +28,8 @@ section {
 
 .text__secondary {
     color: #9f9f9f;
+}
+
+.command-name {
+
 }
