@@ -1,21 +1,33 @@
-const trafficLightEl = document.querySelector('#trafficLight');
+const trafficLights = document.querySelectorAll('.light');
+const topLight = document.querySelector('#light__top');
+const middleLight = document.querySelector('#light__middle');
+const bottomLight = document.querySelector('#light__bottom');
 
 function makeGreen() {
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
+    bottomLight.style.background = ('#3d4b5e');
+    topLight.style.background = ('#89dac4');
+    changeColor(makeGreen, makeYellow);
 }
 
 function makeYellow() {
-    trafficLightEl.style.background = ('yellow');
-    trafficLightEl.removeEventListener('click', makeYellow);
-    trafficLightEl.addEventListener('click', makeRed);
+    topLight.style.background = ('#3d4b5e');
+    middleLight.style.background = ('#ffdc7b');
+    changeColor(makeYellow, makeRed);
 }
 
 function makeRed () {
-    trafficLightEl.style.background = ('red');
-    trafficLightEl.removeEventListener('click', makeRed);
-    trafficLightEl.addEventListener('click', makeGreen);
+    middleLight.style.background = ('#3d4b5e');
+    bottomLight.style.background = ('#e2725c');
+    changeColor(makeRed, makeGreen);
 }
 
-trafficLightEl.addEventListener('click', makeGreen);
+function changeColor (currentFunc, nextFunc) {
+    trafficLights.forEach(element => {
+        element.removeEventListener('click', currentFunc);
+        element.addEventListener('click', nextFunc);
+    });
+}
+
+trafficLights.forEach(element => {
+    element.addEventListener('click', makeGreen);
+});

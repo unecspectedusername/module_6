@@ -1,6 +1,28 @@
-#trafficLight {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: black;
-  }
+section {
+  padding: 0;
+  width: 700px;
+  height: 700px;
+  background-image: url(../assets/images/traffic_light.png);
+}
+
+.light {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #3d4b5e;
+  position: absolute;
+  cursor: pointer;
+  right: 54px;
+}
+
+#light__top {
+  top: 100px;
+}
+
+#light__middle {
+  top: 287px;
+}
+
+#light__bottom {
+  top: 472px;
+}
