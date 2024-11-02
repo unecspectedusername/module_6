@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    padding: 2px 10px;
+    color: black;
+    font-weight: bold;
+    background-image: linear-gradient(white 50%, #22c3c5 50%);
+    background-size: auto 175%;
+    transition: background .3s ease-in-out;
+  
+    &:hover {
+      background-position-y: 100%;  
+    }
+  }
