@@ -10,4 +10,4 @@
 
 ## Как открыть проект?
 
-Посмотреть проект можно на [GitHub pages](https://unecspectedusername.github.io/module_6/ "GitHub pages")
+Посмотреть проект можно на [GitHub pages](https://unecspectedusername.github.io/module_6/ "GitHub ")
