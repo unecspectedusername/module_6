@@ -1,5 +1,12 @@
+:root {
+    --cyan: #22c3c5;
+    --grey: #eeeeee;
+    --dark-grey: #343434;
+    --dark-cyan: #16a2a4;
+}
+
 body {
-    background-color: #eeeeee;
+    background-color: var(--grey);
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
